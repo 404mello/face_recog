@@ -1,5 +1,5 @@
 # face_recog
-Facial recognition of an individual from an image
+Facial recognition from an image
 
 Directory : Detection
 This code is for detecting faces from images stored in the directory 'images'
