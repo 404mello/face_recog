@@ -21,12 +21,11 @@ def detect_faces(f_cascade, colored_img, scaleFactor=1.2):
     return img_copy
 
 #Loading the image
-path = 'C:\\Users\\Prawigya\\Desktop\\Projects\\Facial_Recognition\\images'
+path = os.getcwd()+'\\images'
 files=os.listdir(path)
 for file in files:
     file='images\\'+file
     test=cv2.imread(str(file))
-    #test = convertToRGB(test)
     harr_face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
     lbp_cascade = cv2.CascadeClassifier('lbpcascade_frontalface.xml')
 
